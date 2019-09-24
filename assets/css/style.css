@@ -1,0 +1,44 @@
+body, html {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+}
+
+header{
+    align-items: center;
+}
+
+h1 {
+    display: inline;
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+.content {
+    padding-top: 1em;
+    width: 960px;
+    margin: auto;
+}
+
+nav {
+    float: right;
+}
+
+li {
+    display: inline;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    background: rgb(102, 102, 102);
+    text-align: center;
+}
+
+footer::after{
+    color: white;
+    content: "Copyright ©";
+}
