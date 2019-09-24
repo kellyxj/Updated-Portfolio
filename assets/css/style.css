@@ -3,10 +3,8 @@ body, html {
     min-height: 100vh;
     flex-direction: column;
     margin: 0;
-}
-
-header{
-    align-items: center;
+    background: url("../images/pipes.png");
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 h1 {
@@ -15,13 +13,35 @@ h1 {
     font-weight: bolder;
 }
 
-.content {
+header{ 
+    align-items: center;
+    background: white;
+    border-bottom: solid;
+    border-width: 2px;
+    border-color: lightgrey;
+}
+
+#myName{
+    background-color:rgb(74,170,165);
+    width:200px;
+    height:100%;
     padding-top: 1em;
+    padding-bottom: 1em;
+    text-align:center;
+    display: inline-block;
+}
+
+#myName h1{
+    color:white;
+}
+
+.content {
     width: 960px;
     margin: auto;
 }
 
 nav {
+    margin-top: 1em;
     float: right;
 }
 
@@ -31,6 +51,42 @@ li {
 
 main {
     flex: 1;
+    background: white;
+    border-style: solid;
+    border-color: lightgrey;
+    border-width: 1px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 1em;
+}
+
+#selfPic {
+    float: left;
+}
+
+p{
+    display: inline;
+    line-height: 2;
+    color: rgb(149, 119, 119);
+}
+
+.formItem {
+    margin: .7em;
+}
+
+label{
+    color:rgb(153, 153, 153)
+}
+
+input, textarea {
+    margin-top: .5em;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input[type=submit] {
+    width: 160px;
 }
 
 footer {
