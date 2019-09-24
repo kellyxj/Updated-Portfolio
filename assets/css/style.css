@@ -13,6 +13,10 @@ h1 {
     font-weight: bolder;
 }
 
+h4 {
+    font-weight: bolder;
+}
+
 header{ 
     align-items: center;
     background: white;
@@ -97,4 +101,16 @@ footer {
 footer::after{
     color: white;
     content: "Copyright ©";
+}
+
+@media (max-width: 960px) {
+    .content {
+        max-width: 100%;
+    }
+    #myName {
+        display: block;
+    }
+    nav {
+        float: none;
+    }
 }
